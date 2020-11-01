@@ -1,0 +1,23 @@
+- name: Publish app to Google App Engine
+  
+  # You may pin to the exact commit or the version.
+  
+  # uses: zxyle/publish-gae-action@647a5e5538829de31fdfaad8de523573c417139f
+  
+  uses: zxyle/publish-gae-action@v2.3.0
+  with:
+  
+    # The service account email which will be used for authentication.
+    service_account_email: booking.ghodly@gmail.com
+    
+    # The service account key which will be used for authentication.
+    service_account_key: 9927801ed7f2396af0929dcefc9e577caecb39a9
+    
+    # GAE project id
+    project_id: vyxie-vyxie
+    
+    # GAE variables to be written to the app.yaml file
+    gae_variables: # optional
+    
+    # Path to the app.yml, Defaults to ./app.yml
+    gae_config_path: # optional
