@@ -9,10 +9,10 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: alpine-latest
 
     container:
-      image:  google/dart:latest
+      image:  alpine:latest
 
     steps:
     - uses: actions/checkout@v2
